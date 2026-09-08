@@ -1,0 +1,62 @@
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backend
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.properties
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.tsbuildinfo
+
+# Docker volumes
+postgres-data/
+redis-data/
+kafka-data/
+
+# Secrets / credentials
+**/secrets/
+**/credentials/
+*.pem
+*.key
+!**/demo*.key
+
+# Test / coverage
+**/jacoco/
+**/surefire-reports/
+**/failsafe-reports/
+
+# Misc
+*.tmp
+*.bak
+.cache/
+.tools/
